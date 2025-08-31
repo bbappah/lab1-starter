@@ -144,7 +144,7 @@ class State:
             self.state = self.state.smap(lambda b, a: (b, a * b[j])).smap(
                 lambda b, a: (b, a / sqrt(1.0 - prob_0))
             )
-        return self
+        return measurement
 
     def __str__(self):
         """
